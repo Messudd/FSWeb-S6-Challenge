@@ -5,3 +5,17 @@ body {
   background-image: url('./images/sw-bg.jpg');
   background-size: cover;
 }
+
+.accordeon {
+  background-color: rgb(205, 205, 205);
+  height: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.accordeon.open {
+  background-color: black;
+  color: #fff;
+  height: auto;
+
+}
