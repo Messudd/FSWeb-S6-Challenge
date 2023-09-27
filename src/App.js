@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Karakter from "./components/Karakter";
-import Accordeon from "./components/Accordeon";
 
 const App = () => {
   const [myState, setMyState] = useState({
@@ -54,12 +53,11 @@ const App = () => {
             <h1 className="Header">STAR WARS - WIT</h1>
             <div className="char-container">
               {myState.chars.map((char, index) => (
-                <Accordeon  key={index} title = {char.name}>
                   <Karakter
+                    key={index}
                     char={char}
                     movies={myState.movies}
                   ></Karakter>
-                </Accordeon>
               ))}
             </div>
           </>

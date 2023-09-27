@@ -6,10 +6,11 @@ const Accordeon = (props) => {
 
   return (
     <div className={`accordeon ${isOpen ? "open" : ""}`}>
-      <div className="title" onClick={() => setOpen(!isOpen)}>
-        {title}
+      <div className="acc-title" onClick={() => setOpen(!isOpen)}>
+        <div className="title"> {title}</div>
+        <div className="arrow">{"<"}</div>
       </div>
-     {children}
+      {children}
     </div>
   );
 };

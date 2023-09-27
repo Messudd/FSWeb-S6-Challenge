@@ -1,8 +1,54 @@
 .App {
   text-align: center;
+  color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .Header {
-  color: #443e3e;
+  color: gold;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -0.3rem;
   text-shadow: 1px 1px 5px #fff;
 }
-/* write your parent styles in here for your App.js */
+.title {
+  text-transform: uppercase;
+  color: gold;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+.acc-title {
+  height: 3rem;
+  color:gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(34,34,34,0.9);
+  padding: 0 1.5rem;
+  cursor: pointer;
+  transition:  background-color 0.5s;
+
+}
+.acc-title:hover {
+  background-color: #444;
+}
+
+.accordeon {
+ background-color: rgba(34,34,34,0.9);
+ margin:20px;
+ max-height: 3rem;
+ overflow: hidden;
+ border: 1px solid aliceblue;
+ -webkit-transition: max-height 0.5s;
+ -moz-transition : max-height 0.5s;
+ -ms-transition : max-height 0.5s;
+ -o-transition : max-height 0.5s;
+ transition: max-height 0.5s;
+}
+
+.accordeon.open {
+  max-height: 400px;
+  overflow-y: scroll;
+
+}
